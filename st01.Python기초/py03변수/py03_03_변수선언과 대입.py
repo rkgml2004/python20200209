@@ -1,8 +1,9 @@
+score = 20
+score = 30
+print(score)  # 30
 
-# 기본형 타입
-# 불린
-# 숫자
-# 숫자
-# 문자열
-# None. 지정되지 않은.
 
+width = 10
+height = 20
+area = width * height
+print(area)  # 200

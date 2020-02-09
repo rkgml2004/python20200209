@@ -1,4 +1,11 @@
 # py02_02_식별자.py
 
-1stPrizeMoney  =0
-break  =0
+speed
+earthPopulation
+_count
+$value
+반복횟수 = 0
+henry8
+
+1stPrizeMoney
+break

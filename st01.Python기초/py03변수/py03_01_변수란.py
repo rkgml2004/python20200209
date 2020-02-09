@@ -5,10 +5,26 @@
 
 
 # 변수 초기화 = 변수 선언과 변수 대입
+b = True
+c = "a"
+i = 7
+d = 0.05
 
+print(b)
+print(c)
+print(i)
+print(d)
 
 # 변수 대입
+b = False
+c = "A"
+i = 100
+d = 20.17
 
+print(b)
+print(c)
+print(i)
+print(d)
 
 
 # 키보드 입력 --> 변수 --> 모니터 출력
