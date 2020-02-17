@@ -1,15 +1,15 @@
-# ºÒ¸° Å¸ÀÔ
+# ë¶ˆë¦° íƒ€ì…
 print(not True)
 print(not False)
 
-# and ¿¬»êÀÚ
+# and ì—°ì‚°ì
 print(True and True)
 print(True and False)
 print(False and True)
 print(False and False)
 print()
 
-# or ¿¬»êÀÚ
+# or ì—°ì‚°ì
 print(True or True)
 print(True or False)
 print(False or True)
