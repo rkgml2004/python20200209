@@ -28,13 +28,13 @@ print(str, sum3 )
 # 함수에서 바뀌는 값은 입력으로 처리한다. 
 # 매개 변수는 함수에서 입력으로 사용되는 변수다. x, y
 def get_sum(x, y):
-    sum3 = 0
+    sum = 0
     for i in range(x, y + 1, 1):
-        sum3 = sum3 + i
+        sum = sum + i
     str = "%s부터 %s까지의 합계 : " % (x , y)
-    print("함수출력 ", str, sum3 )
+    print("함수출력 ", str, sum )
 
-    return sum3
+    return sum
 
 # 함수 호출 == 함수 사용.
 sum1 = get_sum( 1, 10 )    # 1부터 10까지의 합계를 구하고 출력

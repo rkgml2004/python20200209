@@ -3,3 +3,8 @@
 #   File ".\2-33.py", line 4, in <module>
 #     string + number
 # TypeError: must be str, not int
+
+string = "¹®ÀÚ¿­"
+number = 273
+
+string + number
