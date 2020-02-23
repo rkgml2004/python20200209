@@ -6,6 +6,10 @@ for x in range(1, 10, 1):
     str = "2 * %d = %2d" % (x, 2*x )
 
     # x가 9이면 마침표를 찍고 
-    #    아니면 콤마를 찍어라. 
+    #    아니면 콤마를 찍어라.
+	if(x == 9):
+        print( str, "." )
+    else:
+        print( str, "," )
     
-    print()
+print()
