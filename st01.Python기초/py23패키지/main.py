@@ -13,7 +13,6 @@
 # game.operation 패키지의 run 모듈을 가져옴
 
 # geometry 모듈의 triangle_area 함수 사용
-print(game.graphic.geometry.triangle_area(30, 40))
 
 # geometry 모듈의 rectangle_area 함수 사용
-print(game.graphic.geometry.rectangle_area(30, 40))
+
