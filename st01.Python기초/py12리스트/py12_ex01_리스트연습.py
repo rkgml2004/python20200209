@@ -86,11 +86,28 @@ for i in range(4):
 
 # 도전.
 #  첫번째 APPLE이 있는 방번호를 출력하시오.
+pos = list.index("APPLE")
+value = list[pos]
+print("APPLE 검색 : " + pos)
+
 
 #  S: 오름차순 정렬. 검색: "파이썬 리스트 오름차순 정렬"
+sorted(list)
+print("S: 오름차순 정렬 >> ", list)
 
 #  S: 내림차순 정렬. 검색: "파이썬 리스트 내림차순 정렬"
+reversed(list)
+print("S: 내림차순 정렬 >> ", list)
 
 #  APPLE 이 몇개 있나요?
+count = 0
+for i in range(len(list)):
+    if list[i] == "APPLE":
+        count += 1
+print("S: APPLE 이 몇개 있나요? >> " + count)
 
 #  리스트 의 모든 값을 while 문을 사용하여 삭제하시오
+while len(list) != 0 :
+    list.pop(0)
+print("D: list의 모든 값을 삭제하시오 >> ", list)
+

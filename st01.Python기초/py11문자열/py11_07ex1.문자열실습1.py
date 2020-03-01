@@ -10,14 +10,14 @@ prov = "A barking Dog"
 
 
 # prov의 길이를 출력하시오. 문자열 길이: len().  
-lenght = len( prov)
-print( lenght )
+length = len(prov)
+print("prove 문자열 길이:", length)
 
 
 # 첫번째 b 문자를 찾고 위치를 출력하시오.
 # 위치 찾는 메서드: find(), index()
 pos = prov.find( "b")
-print(pos) # 있으면 0 이나 양수, 없으면 -1
+print("첫번째 b 문자의 위치는:", pos)# 있으면 0 이나 양수, 없으면 -1
 
 
 # 문자열에 "Dog"가 있으면 "Dog있음"을 없으면 "Dog없음" 을 출력하시오
@@ -27,7 +27,6 @@ if pos == -1 :
     print("Dog없음")
 else:
     print("Dog있음")
-
 
 
 # prov 문자열에 Dog가 들어 있으면 Cat으로 바꾸어 출력하시오.
