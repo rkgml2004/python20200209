@@ -11,4 +11,37 @@
 # 
 # 도전. 위의 코드를 이용하여 1부터 100 사이의 모든 소수를 찾는 코드를 작성하시오.
 
+def isprime(n):
+    result = True
+    for i in range(2, n):
+        if ( n%i == 0 ):
+            result = False
+            break
+
+    return result
+
+def myinput( mesg ) :
+    try:
+        n1 = input( mesg )
+        n1 = int( n1 )
+    except ValueError as ex:
+        print( ex )
+    return n1
+  
+# 왜 main() 함수를 만들어 사용하는가?
+# 프로그래밍에서 지향하는 방식은 전역변수를 사용하지 않는다 
+def main():
+    # 입력 처리
+    n = myinput( "정수를 입력하시오: " )
+
+    # 소수 여부 출력
+    prime = isprime(n) 
+    print(" %d 소수 여부 >> %s " % (n, prime ) )
+
+    # 도전. 위의 코드를 이용하여 1부터 100 사이의 모든 소수를 찾는 코드를 작성하시오.
+    for n in range( 1, 101, 1) :
+        prime = isprime(n) 
+        print(" %d 소수 여부 >> %s " % (n, prime ) )
+
+main()  
 

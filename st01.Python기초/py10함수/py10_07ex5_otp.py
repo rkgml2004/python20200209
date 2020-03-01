@@ -1,3 +1,19 @@
-# »ç¿ëÀÚ ÇÔ¼ö ¸¸µé±â
-# ÀÏÈ¸¿ë ÆĞ½º¿öµå »ı¼º±â¸¦ ÀÌ¿ëÇÏ¿©¼­ 3°³ÀÇ ÆĞ½º¿öµå¸¦ »ı¼ºÇÏ¿© Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇØº¸ÀÚ. 
+# ì‚¬ìš©ì í•¨ìˆ˜ ë§Œë“¤ê¸°
+# ì¼íšŒìš© íŒ¨ìŠ¤ì›Œë“œ ìƒì„±ê¸°ë¥¼ ì´ìš©í•˜ì—¬ì„œ 3ê°œì˜ íŒ¨ìŠ¤ì›Œë“œë¥¼ ìƒì„±í•˜ì—¬ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨ì„ ì‘ì„±í•´ë³´ì. 
 
+import random
+
+
+def genPass():
+    alphabet = "abcdefghijklmnopqrstuvwxyz0123456789"
+    password = ""
+
+    for i in range(6):
+        index = random.randrange(len(alphabet))
+        password = password + alphabet[index]
+    return password
+
+
+print(genPass())
+print(genPass())
+print(genPass())
