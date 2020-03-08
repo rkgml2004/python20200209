@@ -1,0 +1,19 @@
+
+# 모듈 import 방법 3가지
+
+>>> import game.sound.echo
+>>> game.sound.echo.echo_test()
+echo
+
+
+>>> from game.sound import echo
+>>> echo.echo_test()
+echo
+
+>>> from game.sound.echo import echo_test
+>>> echo_test()
+echo
+
+>>> from game.sound.echo import *
+>>> echo_test()
+echo

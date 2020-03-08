@@ -23,16 +23,23 @@ array = str.split(" ")
 for i in range(0, len(array), 1):
     # print(array[i]) # This, was , a, ...
     # array[0] == This  ==> 0번방(array[0]) 의 첫글자 <==> array[0][0] == T
+    # array[1] == was   ==> 1번방(array[1]) 의 첫글자 <==> array[1][0] == w
+    # array[2] == a     ==> 2번방(array[2]) 의 첫글자 <==> array[2][0] == a
     key = array[i][0]  # 첫번째 글자 추출
     key = key.upper()  # 대문자로 치환 
     tmp = table.get( key )  # table에서 키값으로 찾기
+
     if tmp == None :
+        # 미존재 
         table[ key ] = 1 # 숫자로 저장
     else:
+        # 존재 
         table[ key ] = table[ key ] + 1
 
-# 출력하기. 딕셔너리 키와 값의 쌍으로 열거. # key, value를 쌍으로 열거. items() 메서드
+# 출력하기. 딕셔너리 키와 값의 쌍으로 열거. items()
+# key, value를 쌍으로 열거. items() 메서드 사용.
 for item in table.items():
+    # print("items >>> ", item[0], item[1] )
     print( item[0], item[1], item[0]*item[1]  ) # item[0] 을 item[1] 번 반복하시오
                                        # item =  (T, 17) ==> TTTTTTTTTTTTTTTTT
                                        # item =  (W, 4 ) ==> WWWW
