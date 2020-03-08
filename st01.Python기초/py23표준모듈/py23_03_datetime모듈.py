@@ -49,7 +49,6 @@ print( str )
 # hour가 12다 크면 오후 아니면 오전 ==> if ~ else 사용 
 # 예시) 현재 시간은 15시로 오후입니다!
 hour = now.hour # 현재 시간
-
 if now.hour < 12: # 오전 구분
     print("현재 시간은 {}시로 오전입니다!".format(now.hour))
 else : # 오후 구분
@@ -101,10 +100,14 @@ after = now + datetime.timedelta(
 print("수정:",  dateFormat(after) )
 print()
 
+
+########################
+# 도전. datetime.timedelta()로 시간 더하고 빼기 >> 오늘부터 100일 전 날짜를 출력하시오.
 print("datetime.timedelta()로 시간 더하고 빼기 >> 오늘부터 100일 전 날짜를 출력하시오.")
 print("현재:",  dateFormat(now) ) 
 after = now + datetime.timedelta( days = -100 )
 print("수정:",  dateFormat(after) ) 
+
 
 ########################
 # 특정 시간 요소 교체하기 : replace() 메서드

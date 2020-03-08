@@ -49,6 +49,7 @@ print("m.tan(1):", m.tan(1))
 print("m.floor(2.5):", m.floor(2.5))
 print("m.ceil(2.5):", m.ceil(2.5))
 
+
 # sin, cos, tan, 내림과 올림을 구합니다.
 print("sin(1):", sin(1))
 print("cos(1):", cos(1))
