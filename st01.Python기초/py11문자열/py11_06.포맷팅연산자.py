@@ -18,6 +18,7 @@
 # %G	%g와 같다. 단, 지수 표현을 대문자 E로 한다.
 
 
+#################
 # 문자열 포매팅
 "I eat %d apples." % 3
 'I eat 3 apples.'
@@ -28,11 +29,27 @@ day = "three"
 # 'I ate 10 apples. so I was sick for three days.'
 
 
+#################
 # 정렬과 공백
-"%10s" % "hi"  # '        hi'
-"%-10sjane." % 'hi'  # 'hi        jane.'
+print("%10s" % "hi")  # '        hi'
+print("%-10sjane." % "hi")  # 'hi        jane.'
+print()
 
 
+#################
 # 소수점 표현
-"%0.4f" % 3.42134234  # '3.4213'
-"%10.4f" % 3.42134234  # '    3.4213'
+print("%0.4f" % 3.42134234)  # '3.4213'
+print("%10.4f" % 3.42134234)  # '    3.4213'
+print()
+
+#################
+# 문자 앞에 0을 채우기
+# %05d"
+# stirng.zfill(width)
+# string.rjust(width[, fillchar])
+print("%05d" % 5)  # 00005
+print("3".zfill(5))
+print("50000".zfill(5))
+print("723".zfill(5))
+print("5".rjust(5, '0'))
+print()

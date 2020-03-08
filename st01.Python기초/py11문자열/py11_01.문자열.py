@@ -1,9 +1,36 @@
-# py02_06_¹®ÀÚ¿­°áÇÕ
+# py02_06_ë¬¸ìì—´ê²°í•©
+i = 10
+j = 20
+k = i + j
 
-# Ãâ·Â  :  ´õÇÏ±â : 10 + 20 = 30
+# ì¶œë ¥  :  ë”í•˜ê¸° : 10 + 20 = 30
+print("ë”í•˜ê¸°: ", i, "+", j, "=", k)
 
-# "abcdefg"¿¡¼­ ¹®ÀÚ¿­ ÃßÃâ ¿¬½ÀÇÏ±â
+s1 = "Hello"
+s2 = " World"
+print(s1 + s2)
 
-# "¾È³çÇÏ¼¼¿ä" ¹®ÀÚ¿­ ¿­°Å
+s3 = s1 + s2
+print(s3)
 
-# "apple" ¹®ÀÚ¿­ ¿­°Å
+# "abcdefg"ì—ì„œ ë¬¸ìì—´ ì¶”ì¶œ ì—°ìŠµí•˜ê¸°
+str = "abcdefg"
+print(str[2:])     # cdefg
+print(str[:2])     # ab
+print(str[2:3])    # c
+print(str[2:6])    # cdef
+print(str[:-1])    # abcdef
+print(str[-1:])    # g
+print(str[-3:-4])
+print(str[-3:-1])  # ef
+print(str[-3:0])
+print(str[-3:])    # efg
+
+# "ì•ˆë…•í•˜ì„¸ìš”" ë¬¸ìì—´ ì—´ê±°
+for character in "ì•ˆë…•í•˜ì„¸ìš”":
+    print("-", character)
+
+# "apple" ë¬¸ìì—´ ì—´ê±°
+fruit = "apple"
+for letter in fruit:
+   print(letter, end=" ") 
